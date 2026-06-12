@@ -1,9 +1,11 @@
 {
   "1514811261164982373": {
-    "staff_apps_channel": "1514837437342552174",
+    "staff_apps_channel": "1514862512888090634",
     "welcome_channel": "1514837683954913300",
-    "log_channel": "1514837323114745907",
-    "ticket_category": "1514839220882116629",
-    "transcript_channel": "1514837839932555274"
+    "log_channel": "1514862513844391986",
+    "ticket_category": "1514862515878760487",
+    "transcript_channel": "1514837839932555274",
+    "apply_channel": "1514862503941771335",
+    "verify_channel": "1514862488762454107"
   }
 }

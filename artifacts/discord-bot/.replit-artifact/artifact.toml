@@ -1,0 +1,17 @@
+kind = "api"
+title = "NXT Discord Bot"
+version = "1.0.0"
+
+[[services]]
+name = "NXT Discord Bot"
+
+[services.development]
+run = "pnpm --filter @workspace/discord-bot run start"
+
+[services.production]
+
+[services.production.run]
+args = ["node", "artifacts/discord-bot/src/index.js"]
+
+[services.production.run.env]
+NODE_ENV = "production"

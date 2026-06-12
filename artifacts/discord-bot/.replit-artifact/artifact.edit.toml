@@ -1,0 +1,24 @@
+kind = "api"
+previewPath = "/discord-bot"
+title = "NXT Discord Bot"
+version = "1.0.0"
+
+[[services]]
+localPort = 3000
+name = "NXT Discord Bot"
+paths = ["/discord-bot"]
+
+[services.env]
+PORT = "3000"
+
+[services.development]
+run = "pnpm --filter @workspace/discord-bot run start"
+
+[services.production]
+
+[services.production.run]
+args = ["node", "artifacts/discord-bot/src/index.js"]
+
+[services.production.run.env]
+PORT = "3000"
+NODE_ENV = "production"

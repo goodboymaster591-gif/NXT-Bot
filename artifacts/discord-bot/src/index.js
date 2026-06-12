@@ -4,10 +4,22 @@
  * Deploy commands with: node src/deploy-commands.js
  */
 
+const http = require('http');
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const loadCommands = require('./handlers/commands.js');
 const loadEvents = require('./handlers/events.js');
 const logger = require('./utils/logger.js');
+
+// ─── Health check server (required for deployment) ────────────────────────────
+// Listens on PORT so Replit's publish system can verify the process is running.
+
+const HEALTH_PORT = parseInt(process.env.PORT || '3000', 10);
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ status: 'ok', bot: 'NXT Bot', uptime: process.uptime() }));
+}).listen(HEALTH_PORT, () => {
+  logger.info(`Health server listening on port ${HEALTH_PORT}`);
+});
 
 // ─── Client setup ─────────────────────────────────────────────────────────────
 
