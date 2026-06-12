@@ -1,0 +1,289 @@
+Create a professional Discord bot for my Fortnite esports organization called NXT Esports.
+
+Theme:
+- Purple and white branding
+- Modern esports style
+- Footer text: "⚡ NXT | NEXT UP"
+- Use Discord slash commands
+- Use embeds for all responses
+- Organize commands into categories
+- Include detailed error handling
+- Use Discord.js v14
+- Store data using JSON or SQLite
+- Easy to edit and expand
+
+━━━━━━━━━━━━━━━━━━
+GENERAL COMMANDS
+━━━━━━━━━━━━━━━━━━
+
+/help
+Shows all commands and categories
+
+/ping
+Shows bot latency
+
+/serverinfo
+Displays server information
+
+/userinfo
+Displays user information
+
+/avatar
+Shows a user's avatar
+
+/socials
+Shows NXT social media links
+
+/rules
+Displays NXT rules embed
+
+/requirements
+Displays NXT roster requirements embed
+
+━━━━━━━━━━━━━━━━━━
+APPLICATION SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+/apply
+
+Opens an application panel with buttons:
+
+🎮 Competitive Application
+📹 Creator Application
+🎨 Designer Application
+🎬 Editor Application
+
+When clicked:
+- Creates private ticket
+- Asks questions
+- Sends results to staff channel
+- Saves application data
+
+━━━━━━━━━━━━━━━━━━
+TICKET SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+/panel
+
+Creates ticket panel
+
+Buttons:
+🎟 Support
+📋 Applications
+🚨 Reports
+
+Features:
+- Auto create channels
+- Staff controls
+- Close button
+- Transcript generation
+- Log channel
+
+━━━━━━━━━━━━━━━━━━
+RECRUITMENT SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+/recruit
+
+Creates recruitment embed
+
+/accept @user
+
+Accepts member
+
+/deny @user
+
+Denies member
+
+/promote @user role
+
+Promotes member
+
+/demote @user role
+
+Demotes member
+
+━━━━━━━━━━━━━━━━━━
+NXT ROSTER SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+Roles:
+
+👑 NXT | Pro
+💎 NXT | Competitive
+⚡ NXT | Academy
+🌟 NXT | Recruit
+
+📹 NXT | Creator
+🎨 NXT | Designer
+🎬 NXT | Editor
+
+Commands:
+
+/roster
+Shows roster statistics
+
+/player add
+/player remove
+
+/teamstats
+
+Displays:
+- Total players
+- Creators
+- Editors
+- Designers
+- Staff
+
+━━━━━━━━━━━━━━━━━━
+SCRIM SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+/scrim create
+
+Creates scrim announcement
+
+Options:
+- Date
+- Time
+- Region
+- Team Size
+
+Buttons:
+✅ Attending
+❌ Not Attending
+
+Tracks attendance
+
+/scrim attendance
+
+Shows attendance list
+
+━━━━━━━━━━━━━━━━━━
+TOURNAMENT SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+/event create
+
+Creates tournament announcement
+
+/event end
+
+Ends event
+
+/event results
+
+Posts results
+
+Leaderboard support
+
+━━━━━━━━━━━━━━━━━━
+VOUCH SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+/vouch @user
+
+Leaves vouch
+
+/vouches @user
+
+Displays total vouches
+
+Stores permanently
+
+━━━━━━━━━━━━━━━━━━
+STAFF SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+/warn
+
+Warn user
+
+/mute
+
+Timeout user
+
+/kick
+
+Kick user
+
+/ban
+
+Ban user
+
+/purge
+
+Delete messages
+
+/warnings
+
+Check warning history
+
+All moderation actions logged
+
+━━━━━━━━━━━━━━━━━━
+AUTOMATION
+━━━━━━━━━━━━━━━━━━
+
+Auto welcome messages
+
+Auto leave logs
+
+Auto moderation
+
+Auto anti-spam
+
+Auto anti-link spam
+
+Auto role assignment
+
+Auto logs
+
+━━━━━━━━━━━━━━━━━━
+LOGGING SYSTEM
+━━━━━━━━━━━━━━━━━━
+
+Logs:
+- Deleted messages
+- Edited messages
+- Member joins
+- Member leaves
+- Role updates
+- Nickname changes
+- Ticket actions
+- Application actions
+- Staff actions
+
+━━━━━━━━━━━━━━━━━━
+SETUP COMMANDS
+━━━━━━━━━━━━━━━━━━
+
+/setup
+
+Interactive setup wizard
+
+Configure:
+- Ticket category
+- Staff roles
+- Log channels
+- Welcome channel
+- Application channel
+
+━━━━━━━━━━━━━━━━━━
+EMBED DESIGN
+━━━━━━━━━━━━━━━━━━
+
+Every embed should:
+- Use purple color (#8B5CF6)
+- Have esports styling
+- Footer: ⚡ NXT | NEXT UP
+- Timestamp
+- Professional formatting
+
+━━━━━━━━━━━━━━━━━━
+BONUS FEATURES
+━━━━━━━━━━━━━━━━━━
+
+Give suggestions for additional esports organization features.
+
+Create the entire bot with clean file structure, comments, setup instructions, package.json, and all necessary code files.
