@@ -48,6 +48,49 @@ module.exports = {
     if (interaction.isButton()) {
       const id = interaction.customId;
 
+      // ── Verification button ──────────────────────────────────────────────
+      if (id === 'verify_join') {
+        const verifiedRole = interaction.guild.roles.cache.find(r => r.name === config.roles.verified)
+          || interaction.guild.roles.cache.find(r => r.name === 'Verified');
+
+        if (!verifiedRole) {
+          return interaction.reply({
+            content: '❌ Verified role not found. Ask an admin to run `/revamp1` first.',
+            ephemeral: true,
+          });
+        }
+
+        if (interaction.member.roles.cache.has(verifiedRole.id)) {
+          return interaction.reply({ content: '✅ You are already verified!', ephemeral: true });
+        }
+
+        try {
+          await interaction.member.roles.add(verifiedRole);
+
+          const welcomeEmbed = new EmbedBuilder()
+            .setTitle('⚡ Welcome to NXT Esports!')
+            .setDescription(
+              `You've been verified, ${interaction.user}! The server is now fully unlocked.\n\n` +
+              '**Get started:**\n' +
+              '> ▸ Check **#announcements** for updates\n' +
+              '> ▸ Read **#rules** before chatting\n' +
+              '> ▸ Apply to join the roster in **#apply-here**\n' +
+              '> ▸ Open a **ticket** if you need help\n\n' +
+              '*Good vibes only. Let\'s get it! ⚡*'
+            )
+            .setColor(config.colorSuccess)
+            .setFooter({ text: config.footer })
+            .setTimestamp();
+
+          return interaction.reply({ embeds: [welcomeEmbed], ephemeral: true });
+        } catch {
+          return interaction.reply({
+            content: '❌ Failed to assign Verified role. Make sure the bot\'s role is above "Verified" in the role list.',
+            ephemeral: true,
+          });
+        }
+      }
+
       // Application panel buttons
       if (id.startsWith('apply_') && !id.startsWith('apply_modal_') && !id.startsWith('apply_accept_') && !id.startsWith('apply_deny_')) {
         return applyCommand.handleButton(interaction);
