@@ -10,7 +10,8 @@
  *                         Leave empty to deploy globally (up to 1hr propagation)
  */
 
-const { REST, Routes } = require('@discordjs/rest');
+const { REST } = require('@discordjs/rest');
+const { Routes } = require('discord-api-types/v10');
 const fs = require('fs');
 const path = require('path');
 
