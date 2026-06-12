@@ -4,7 +4,6 @@
  * Deploy commands with: node src/deploy-commands.js
  */
 
-require('dotenv').config();
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const loadCommands = require('./handlers/commands.js');
 const loadEvents = require('./handlers/events.js');
@@ -15,12 +14,11 @@ const logger = require('./utils/logger.js');
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMembers,
+    GatewayIntentBits.GuildMembers,    // Privileged — enable in Dev Portal
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.GuildMessageReactions,
-    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.MessageContent,  // Privileged — enable in Dev Portal
     GatewayIntentBits.GuildModeration,
-    GatewayIntentBits.GuildPresences,
   ],
   partials: [
     Partials.Message,

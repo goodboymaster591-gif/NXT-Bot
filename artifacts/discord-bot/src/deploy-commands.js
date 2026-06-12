@@ -10,7 +10,6 @@
  *                         Leave empty to deploy globally (up to 1hr propagation)
  */
 
-require('dotenv').config();
 const { REST, Routes } = require('@discordjs/rest');
 const fs = require('fs');
 const path = require('path');
