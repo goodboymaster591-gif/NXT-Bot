@@ -1,0 +1,57 @@
+2026-06-13T03:32:19.041660093Z ==> Build successful 🎉
+2026-06-13T03:32:22.677986358Z ==> Deploying...
+2026-06-13T03:32:22.787751365Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-06-13T03:32:31.772620282Z ==> Using Erlang version 28.0.2 (default)
+2026-06-13T03:32:34.562837728Z ==> Using Elixir version 1.18.4 (default)
+2026-06-13T03:32:37.561075749Z ==> Docs on specifying Elixir and Erlang versions: https://render.com/docs/elixir-erlang-versions
+2026-06-13T03:32:37.567559572Z ==> Running 'node artifacts/discord-bot/src/index.js'
+2026-06-13T03:32:40.960615363Z [03:32:40] [OK]  JSON data store initialized
+2026-06-13T03:32:40.961772846Z [03:32:40] [INFO] Loaded command: /apply
+2026-06-13T03:32:40.963978138Z [03:32:40] [INFO] Loaded command: /event
+2026-06-13T03:32:40.964604136Z [03:32:40] [INFO] Loaded command: /avatar
+2026-06-13T03:32:40.965042548Z [03:32:40] [INFO] Loaded command: /help
+2026-06-13T03:32:40.96580787Z [03:32:40] [INFO] Loaded command: /ping
+2026-06-13T03:32:40.966280873Z [03:32:40] [INFO] Loaded command: /requirements
+2026-06-13T03:32:40.966726015Z [03:32:40] [INFO] Loaded command: /rules
+2026-06-13T03:32:40.967204039Z [03:32:40] [INFO] Loaded command: /serverinfo
+2026-06-13T03:32:40.967690883Z [03:32:40] [INFO] Loaded command: /socials
+2026-06-13T03:32:40.968161956Z [03:32:40] [INFO] Loaded command: /userinfo
+2026-06-13T03:32:40.968944458Z [03:32:40] [INFO] Loaded command: /ban
+2026-06-13T03:32:40.969553155Z [03:32:40] [INFO] Loaded command: /kick
+2026-06-13T03:32:40.970586794Z [03:32:40] [INFO] Loaded command: /mute
+2026-06-13T03:32:40.971100859Z [03:32:40] [INFO] Loaded command: /purge
+2026-06-13T03:32:41.059080308Z [03:32:41] [INFO] Loaded command: /warn
+2026-06-13T03:32:41.059902251Z [03:32:41] [INFO] Loaded command: /warnings
+2026-06-13T03:32:41.061450465Z [03:32:41] [INFO] Loaded command: /accept
+2026-06-13T03:32:41.062422362Z [03:32:41] [INFO] Loaded command: /demote
+2026-06-13T03:32:41.063125752Z [03:32:41] [INFO] Loaded command: /deny
+2026-06-13T03:32:41.063901683Z [03:32:41] [INFO] Loaded command: /promote
+2026-06-13T03:32:41.064324515Z [03:32:41] [INFO] Loaded command: /recruit
+2026-06-13T03:32:41.065438717Z [03:32:41] [INFO] Loaded command: /player
+2026-06-13T03:32:41.066004683Z [03:32:41] [INFO] Loaded command: /roster
+2026-06-13T03:32:41.06659681Z [03:32:41] [INFO] Loaded command: /teamstats
+2026-06-13T03:32:41.06837424Z [03:32:41] [INFO] Loaded command: /scrim
+2026-06-13T03:32:41.06946646Z [03:32:41] [INFO] Loaded command: /revamp1
+2026-06-13T03:32:41.070136249Z [03:32:41] [INFO] Loaded command: /setup
+2026-06-13T03:32:41.071036184Z [03:32:41] [INFO] Loaded command: /panel
+2026-06-13T03:32:41.071824867Z [03:32:41] [INFO] Loaded command: /vouch
+2026-06-13T03:32:41.1585228Z [03:32:41] [INFO] Loaded command: /vouches
+2026-06-13T03:32:41.158632933Z [03:32:41] [OK]  Loaded 30 commands
+2026-06-13T03:32:41.159454967Z [03:32:41] [INFO] Registered event: guildMemberAdd
+2026-06-13T03:32:41.159849627Z [03:32:41] [INFO] Registered event: guildMemberRemove
+2026-06-13T03:32:41.160258109Z [03:32:41] [INFO] Registered event: guildMemberUpdate
+2026-06-13T03:32:41.160764423Z [03:32:41] [INFO] Registered event: interactionCreate
+2026-06-13T03:32:41.161215216Z [03:32:41] [INFO] Registered event: messageCreate
+2026-06-13T03:32:41.161604917Z [03:32:41] [INFO] Registered event: messageDelete
+2026-06-13T03:32:41.161982918Z [03:32:41] [INFO] Registered event: messageUpdate
+2026-06-13T03:32:41.162375219Z [03:32:41] [INFO] Registered event: clientReady
+2026-06-13T03:32:41.164126268Z [03:32:41] [INFO] Status dashboard on http://localhost:10000
+2026-06-13T03:32:42.169422957Z [03:32:42] [OK]  Logged in as NXT Bot#5798
+2026-06-13T03:32:42.16952853Z [03:32:42] [INFO] Serving 1 guild(s) | 1 users
+2026-06-13T03:32:43.432513974Z ==> Your service is live 🎉
+2026-06-13T03:32:43.597789819Z ==> 
+2026-06-13T03:32:43.60071614Z ==> ///////////////////////////////////////////////////////////
+2026-06-13T03:32:43.603175361Z ==> 
+2026-06-13T03:32:43.605997095Z ==> Available at your primary URL https://nxt-bot-k58y.onrender.com
+2026-06-13T03:32:43.608773557Z ==> 
+2026-06-13T03:32:43.611149652Z ==> ///////////////////////////////////////////////////////////
