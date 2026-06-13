@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: nxt-discord-bot
+    runtime: node
+    buildCommand: npm install -g pnpm@9 && pnpm install --frozen-lockfile
+    startCommand: node artifacts/discord-bot/src/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DISCORD_CLIENT_ID
+        sync: false
+      - key: DISCORD_GUILD_ID
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
