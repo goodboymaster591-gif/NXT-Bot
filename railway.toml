@@ -1,0 +1,10 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install -g pnpm@9 && pnpm install --frozen-lockfile"
+
+[deploy]
+startCommand = "node artifacts/discord-bot/src/index.js"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
+healthcheckPath = "/"
+healthcheckTimeout = 30
